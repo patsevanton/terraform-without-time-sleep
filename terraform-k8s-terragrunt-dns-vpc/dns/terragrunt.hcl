@@ -6,10 +6,6 @@ include root {
   path = find_in_parent_folders()
 }
 
-dependency "time-sleep" {
-  config_path = "../time-sleep"
-}
-
 dependency "vpc-address" {
   config_path = "../vpc-address"
   mock_outputs_allowed_terraform_commands = [ "init", "validate", "plan" ]  # only allow mocks  for validate command
